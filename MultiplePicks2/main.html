@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>The attempt to bring things together</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"> </link>
+<script type="text/javascript" src="js/three.min.js"></script>
+<script type="text/javascript" src="js/Projector.js"></script>
+<script type="text/javascript" src="js/CanvasRenderer.js"></script>
+<script type="text/javascript" src="js/TrackballControls.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+<div id="container">
+a
+</div>
+
+<div id="content">
+<h1>Box Generator</h1>
+<h2>Put in the number of Boxes that can be put in</h2>
+Number of boxes: <input type="text" maxlength="5" id="numBox">
+<input type="button" value="Generate" onclick="generateBoxes()">
+<h3>Or clicked on the existing boxes to delete them!</h3>
+<input type="button" onclick="deleteobj()" value="Delete">
+<h3> We can also change the material of the object!</h3>
+<p>Red: <input type="text" id="inR">
+Green: <input type="text" id="inG">
+Blue: <input type="text" id="inB">
+<input type="button" onclick="changeMat()" value="Change"></p>
+<p><input type="button" value="clear clicked" onclick="clearing()"></p>
+<p><input type="button" value="clear All" onclick="clearAll()"></p>
+</div>
+</body>
+</html>
